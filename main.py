@@ -1,11 +1,15 @@
 def calculate_rectangle_area(length, width):
-    return length * width
+
+    
+    return length*width
 
 
 def calculate_cuboid(length, width, height):
-    if height == 0:
+    if height==0:
         return calculate_rectangle_area(length, width), 0
     else:
+
+        
         surface_area = 2 * (length * width + length * height + width * height)
         volume = length * width * height
         return surface_area, volume
